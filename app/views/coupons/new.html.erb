@@ -1,0 +1,13 @@
+Coupon Form
+<br>
+<br>
+<%=form_tag("/coupons") do%>
+  <%= label_tag(:store, "Enter Store:") %>
+  <%= text_field_tag(:store) %>
+  <br>
+  <%= label_tag(:coupon_code, "Enter Code:") %>
+  <%= text_field_tag(:coupon_code) %>
+  <br>
+  <br>
+  <%= submit_tag("Create New Coupon") %>
+<%end%>
